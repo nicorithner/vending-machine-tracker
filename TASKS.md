@@ -17,10 +17,16 @@ Before you begin: what does that mean the relationship is between vending machin
 
 ## User Stories
 
-```
-User Story 1 of 3
+#### User Story 1 of 3
 - [x]
 As a visitor
 When I visit a vending machine show page
 
 - [x] I see the name of all of the snacks associated with that vending machine along with their price
+
+#### User Story 2 of 3
+​- [x]
+As a visitor
+When I visit a vending machine show page
+- [x] I also see an average price for all of the snacks in that machine
+
