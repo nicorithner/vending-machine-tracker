@@ -21,14 +21,18 @@ RSpec.describe "Machine Show Page", type: :feature do
   
   describe "As a visitor When I visit a vending machine show page" do
     it "I see the name of all of the snacks associated with that vending machine along with their price" do
-      visit ("/machines/#{@snack_1.id}")
+      visit ("/machines/#{@dons.id}")
       
       expect(page).to have_content("#{@snack_1.name} .... #{@snack_1.price}")
       expect(page).to have_content("#{@snack_2.name} .... #{@snack_2.price}")
       expect(page).to have_content("#{@snack_3.name} .... #{@snack_3.price}")
       expect(page).to have_content("#{@snack_4.name} .... #{@snack_4.price}")
       expect(page).to have_content("#{@snack_5.name} .... #{@snack_5.price}")
-      # binding.pry
+    end
+
+    it "I also see an average price for all of the snacks in that machine" do
+      visit ("/machines/#{@dons.id}")
+      expect(page).to have_content("Average price: $#{@dons.average_price}")
     end
   end
 end
