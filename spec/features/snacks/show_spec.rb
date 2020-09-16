@@ -46,7 +46,7 @@ RSpec.describe "Snack Show Page", type: :feature do
 
       it "displays machine's average price for snacks and snacks count" do
         visit ("/snacks/#{@snack_1.id}")
-save_and_open_page
+        
         within("#machines-#{@dons.id}") do
           expect(page).to have_content("Average snack price: #{@dons.average_price}")
           expect(page).to have_content("Snacks count: #{@dons.snack_count}")
