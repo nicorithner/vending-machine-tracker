@@ -30,3 +30,17 @@ As a visitor
 When I visit a vending machine show page
 - [x] I also see an average price for all of the snacks in that machine
 
+## Visiting a Snack Page
+
+### User Story 3 of 3
+- [x]
+As a visitor
+When I visit a snack show page
+- [x] I see the name of that snack
+- [x] and I see the price for that snack
+- [x] and I see a list of locations with vending machines that carry that snack
+- [x] and I see the average price for snacks in those vending machines
+- [x] and I see a count of the different kinds of items in that vending machine.
+
+- [x] Model test set up
+- [x] Features test set up

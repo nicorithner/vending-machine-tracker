@@ -25,9 +25,13 @@ RSpec.describe Machine, type: :model do
     MachineSnack.create!(machine: @dons, snack: @snack_5)
   end
 
-  describe "Snack instance methods" do
+  describe "Machine instance methods" do
     it "#average_price" do
       expect(@dons.average_price).to eq(5.6)
+    end
+
+    it "#snack_count" do
+      expect(@dons.snack_count).to eq(5)
     end
   end
 end
