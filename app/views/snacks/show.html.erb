@@ -1,0 +1,11 @@
+<h1><%= @snack.name %></h1>
+<h3>Price: $<%=@snack.price%></h3>
+<h3>Available at: </h3>
+<% @snack.machines.each do |machine|%>
+  <div id="machines-<%=machine.id%>">
+    <ul>Available at: <%=machine.location%></ul>
+    <ul>Average snack price: <%=machine.average_price%></ul>
+    <ul>Snacks count: <%=machine.snack_count%></ul>
+  </div>
+<%end%>
+
